@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+/* Importa a fonte "Cabin" do Google Fonts. A URL fornece diferentes pesos e estilos (normal e itálico). */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Define que todo elemento da página terá margens e paddings zerados e o modelo de caixa será "border-box" (inclui bordas e paddings no tamanho total do elemento). */
+
+body {
+    background-color: #f4f0ea;
+    /* Define a cor de fundo do corpo da página. */
+    color: #798252;
+    /* Define a cor principal do texto. */
+    font-family: "Cabin", sans-serif;
+    /* Aplica a fonte "Cabin" como padrão do corpo da página. Se não disponível, usa sans-serif. */
+    font-weight: 400;
+    /* Define o peso da fonte padrão como 400 (regular). */
+}
+
+header {
+    padding: 2rem;
+    /* Adiciona um espaçamento interno de 2 rem ao header. */
+    background: #331f19;
+    /* Define a cor de fundo do header. */
+    text-align: center;
+    /* Centraliza o conteúdo do header horizontalmente. */
+}
+
+main {
+    padding: 2rem;
+    /* Espaçamento interno do elemento principal da página. */
+    display: flex;
+    /* Define que os elementos filhos de main serão organizados em uma estrutura flexível. */
+    flex-direction: column;
+    /* Alinha os elementos filhos de forma vertical (coluna). */
+    gap: 1.5rem;
+    /* Define um espaçamento de 1.5 rem entre os elementos. */
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* Define uma organização em coluna para os elementos dentro de cada seção e espaçamento de 1 rem entre eles. */
+}
+
+h2 {
+    color: #331f19;
+    /* Define a cor do texto dos títulos h2. */
+    font-size: 1.2rem;
+    /* Define o tamanho da fonte dos títulos. */
+}
+
+input[type=radio], input[type="checkbox"] {
+    accent-color: #798252;
+    /* Define a cor de destaque dos inputs do tipo rádio e checkbox. */
+}
+
+input[type="text"], input[type="password"], input[type="date"], input[type="email"] {
+    width: 100%;
+    /* Define que o campo de entrada ocupará 100% da largura do container pai. */
+    padding: 0.6rem;
+    /* Define o espaçamento interno dos campos. */
+    border: 2px solid #ccd595;
+    /* Define a borda de 2px e a cor ao redor dos campos. */
+    outline: none;
+    /* Remove o estilo padrão de contorno ao focar no campo. */
+    border-radius: 5px;
+    /* Define bordas arredondadas de 5px. */
+    background-color: transparent;
+    /* Define que o fundo dos campos será transparente. */
+}
+
+input::placeholder {
+    color: #cbbba7;
+    /* Define a cor do texto exibido como placeholder (dica) nos campos de entrada. */
+}
+
+select {
+    cursor: pointer;
+    /* Define o estilo de cursor como "pointer" quando o mouse passar sobre o select. */
+    background-color: #ccd595;
+    /* Define a cor de fundo do menu suspenso. */
+    color: #331f19;
+    /* Define a cor do texto do select. */
+    border-radius: 5px;
+    /* Aplica bordas arredondadas ao select. */
+    border: none;
+    /* Remove a borda padrão do select. */
+    outline: none;
+    /* Remove o contorno padrão do select. */
+}
+
+img {
+    width: 5rem;
+    /* Define a largura da imagem como 5 rem. */
+    border-radius: 5rem;
+    /* Aplica um formato circular à imagem com bordas arredondadas. */
+}
+
+table {
+    width: 100%;
+    /* Define que a tabela ocupará 100% da largura do container. */
+    border-collapse: collapse;
+    /* Remove os espaços entre as células da tabela, unificando bordas. */
+}
+
+th {
+    background-color: #ccd595;
+    /* Define a cor de fundo do cabeçalho da tabela. */
+    color: #331f19;
+    /* Define a cor do texto no cabeçalho da tabela. */
+    padding: 1rem;
+    /* Aplica espaçamento interno (padding) nas células do cabeçalho. */
+}
+
+tr {
+    color: #331f19;
+    /* Define a cor do texto das linhas da tabela. */
+    padding: 1rem;
+    /* Aplica padding nas células das linhas da tabela. */
+    text-align: center;
+    /* Centraliza o texto das células. */
+}
+
+tfoot td {
+    background: #331f19;
+    /* Define a cor de fundo das células no rodapé da tabela. */
+    color: #f4f0ea;
+    /* Define a cor do texto no rodapé da tabela. */
+}
+
+details {
+    background-color: #ccd595;
+    /* Define a cor de fundo para o elemento <details>. */
+    border-radius: 5px;
+    /* Aplica bordas arredondadas ao elemento <details>. */
+    padding: 1rem;
+    /* Adiciona espaçamento interno ao elemento <details>. */
+}
+
+summary {
+    color: #331f19;
+    /* Define a cor do texto do título visível no <summary>. */
+    margin: 0.5rem;
+    /* Aplica uma margem ao redor do título do <summary>. */
+    cursor: pointer;
+    /* Muda o cursor para "pointer" ao passar o mouse sobre o <summary>. */
+}
+
+ol {
+    margin-left: 2.5rem;
+    /* Adiciona uma margem à esquerda para as listas ordenadas (<ol>). */
+}
+
+ol li {
+    padding: 0.2rem;
+    /* Adiciona padding aos itens das listas ordenadas. */
+}
+
+fieldset {
+    border: 2px solid #ccd595;
+    /* Aplica uma borda de 2px ao redor do campo do <fieldset>. */
+    border-radius: 5px;
+    /* Define bordas arredondadas de 5px ao <fieldset>. */
+    padding: 1rem;
+    /* Adiciona padding ao <fieldset>. */
+}
+
+legend {
+    color: #331f19;
+    /* Define a cor do texto do <legend>, que é o título de um <fieldset>. */
+    padding: 0 .5rem;
+    /* Aplica padding ao <legend>. */
+}
+
+textarea {
+    outline: none;
+    /* Remove o contorno padrão ao focar no <textarea>. */
+    border: 2px solid #ccd595;
+    /* Aplica uma borda de 2px ao <textarea>. */
+    border-radius: 5px;
+    /* Aplica bordas arredondadas ao <textarea>. */
+    background-color: transparent;
+    /* Define o fundo do <textarea> como transparente. */
+}
+
+button {
+    background-color: #ccd595;
+    /* Define a cor de fundo dos botões. */
+    color: #331f19;
+    /* Define a cor do texto nos botões. */
+    border: none;
+    /* Remove a borda padrão dos botões. */
+    border-radius: 5px;
+    /* Aplica bordas arredondadas aos botões. */
+    padding: .5rem;
+    /* Adiciona padding (espaçamento interno) aos botões. */
+}
+
+footer {
+    padding: 2rem;
+    /* Aplica espaçamento interno ao rodapé. */
+    text-align: center;
+    /* Centraliza o conteúdo do rodapé horizontalmente. */
+    background-color: #331f19;
+    /* Define a cor de fundo do rodapé. */
+}
+
+.paragrafo  {
+    color: #f4f0ea;
+    /* Define a cor do texto do parágrafo dentro do rodapé como clara para contraste. */
+}
+
+footer a {
+    text-decoration: none;
+    /* Remove a sublinha do link no rodapé. */
+    color: #ccd595;
+    /* Define a cor dos links no rodapé. */
+}

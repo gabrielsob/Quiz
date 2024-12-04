@@ -1,0 +1,252 @@
+<!DOCTYPE html> 
+<!-- Define o documento como HTML5. É obrigatório em documentos HTML modernos. -->
+
+<html lang="pt-br"> 
+<!-- Tag <html> define o início de um documento HTML. O atributo 'lang' especifica o idioma do conteúdo, neste caso, português do Brasil. -->
+
+<head>
+    <meta charset="UTF-8"> 
+    <!-- Tag <meta> especifica metadados. O atributo 'charset' define o conjunto de caracteres como UTF-8, permitindo a exibição correta de caracteres especiais. -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define a largura da viewport, permitindo que a página seja responsiva (adapte-se a dispositivos móveis). -->
+
+    <meta name="description" content="um quiz interativo para testar seus conhecimentos">
+    <!-- Atributo 'name' descreve o tipo de metadado, e 'content' contém a descrição da página, útil para SEO. -->
+
+    <title>Quiz para programadores</title>
+    <!-- Tag <title> define o título da página que aparece na aba do navegador. -->
+    
+    <link rel="stylesheet" href="style.css">
+    <!-- Tag <link> é usada para vincular arquivos externos. O atributo 'rel' define o tipo de link, e 'href' indica o caminho para o arquivo CSS. -->
+</head>
+
+<body>
+    <!-- Tag <body> contém todo o conteúdo visível da página. -->
+
+    <header>
+        <!-- Tag <header> define o cabeçalho da página. -->
+        <h1>Quiz interativo para programadores!</h1>
+        <!-- Tag <h1> é usada para o título principal, com maior importância semântica. -->
+        <p>Teste seus conhecimentos em programação e veja qual pontuação você consegue fazer!</p>
+        <!-- Tag <p> define um parágrafo de texto. -->
+    </header>
+
+    <main>
+        <!-- Tag <main> indica o conteúdo principal do documento. -->
+
+        <section>
+            <!-- Tag <section> define uma seção temática do conteúdo. -->
+            <h2>Sobre esse quiz</h2>
+            <!-- Tag <h2> é usada para subtítulos. -->
+            <p><strong>Este quiz</strong> foi desenvolvido para testar seus conhecimentos em programação, como <em>linguagens de programação</em>, conceitos básicos e mais.</p>
+            <!-- Tag <strong> aplica negrito ao texto, e <em> aplica itálico. -->
+            <p>Você encontrará diferentes tipos de perguntas, incluindo múltiplas escolha, texto e perguntas de data. <br> Desafie-se com este quiz!</p>
+            <!-- Tag <br> insere uma quebra de linha. -->
+            <p>Você poderá encontrar alguns acrônimos como <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>, que são comumente usados em questões relacionadas ao desenvolvimento web.</p>
+            <!-- Tag <abbr> define um acrônimo, e o atributo 'title' contém o significado completo. -->
+        </section>
+
+        <section>
+            <!-- Outra seção de conteúdo -->
+            <form>
+                <!-- Tag <form> cria um formulário para coletar dados do usuário. -->
+                <h2>Pergunta 1: Qual linguagem é usada para estruturar páginas web?</h2>
+                <input type="radio" value="Python" id="p1a" name="Pergunta1">
+                <!-- Tag <input> cria um campo de entrada de dados. 'type="radio"' cria um botão de rádio, e o atributo 'name' agrupa as opções. O atributo 'value' define o valor associado à opção. -->
+                <label for="p1a">Python</label><br>
+                <!-- Tag <label> associa um rótulo ao campo <input>, onde o atributo 'for' é vinculado ao 'id' do campo. -->
+
+                <input type="radio" value="HTML" id="cor" name="Pergunta1">
+                <label for="cor">HTML</label><br>
+
+                <input type="radio" value="javascript" id="cor" name="Pergunta1">
+                <label for="cor">javascript</label><br>
+
+                <input type="radio" value="Ruby" id="cor" name="Pergunta1">
+                <label for="cor">Ruby</label><br>
+            </form>
+        </section>
+
+        <!-- Pergunta 2: Texto -->
+        <section>
+            <h2>Pergunta 2: Na URL https://www.google.com o trecho "google.com" é o?____</h2>
+            <form>
+                <input type="text" id="p2" name="Pergunta2" placeholder="Digite sua resposta...">
+                <!-- 'type="text"' cria um campo de texto. O atributo 'placeholder' mostra uma dica ou exemplo no campo. -->
+            </form>
+        </section>
+
+        <!-- Pergunta 3: Senha -->
+        <section>
+            <h2>Pergunta 3: Escreva uma senha forte</h2>
+            <form>
+                <input type="password" id="p3" name="senha" placeholder="Digite sua senha...">
+                <!-- 'type="password"' cria um campo de senha onde os caracteres são ocultos. -->
+            </form>
+        </section>
+
+        <!-- Pergunta 4: Data -->
+        <section>
+            <h2>Pergunta 4: Em qual ano HTML lançou sua primeira versão?</h2>
+            <input type="date" name="data" id="p4">
+            <!-- 'type="date"' cria um campo de entrada para seleção de data. -->
+        </section>
+
+        <!-- Pergunta 5: Seleção múltipla -->
+        <section>
+            <h2>Pergunta 5: Quais dessas tecnologias são consideradas linguagens de programação</h2>
+            <form>
+                <label for="p5">HTML</label>
+                <input type="checkbox" name="Pergunta5" id="p5" value="HTML">
+                <!-- 'type="checkbox"' permite a seleção de várias opções. -->
+                <label for="p5">Java</label>
+                <input type="checkbox" name="Pergunta5" id="p5" value="Java">
+                <label for="p5">CSS</label>
+                <input type="checkbox" name="Pergunta5" id="p5" value="CSS">
+                <label for="p5">JavaScript</label>
+                <input type="checkbox" name="Pergunta5" id="p5" value="JavaScript">
+            </form>
+        </section>
+
+        <!-- Pergunta 6: Upload de arquivo -->
+        <section>
+            <h2>Pergunta 6: Faça o upload de um arquivo contendo código HTML</h2>
+            <form>
+                <input type="file" name="Pergunta6" id="p6">
+                <!-- 'type="file"' permite que o usuário selecione um arquivo para upload. -->
+            </form>
+        </section>
+
+        <!-- Pergunta 7: Menu suspenso -->
+        <section>
+            <h2>Pergunta 7: Selecione o atributo do input que define o seu tipo</h2>
+            <form>
+                <select name="Pergunta7" id="p7">
+                    <!-- Tag <select> cria um menu suspenso, com opções dentro das tags <option>. -->
+                    <option value="id">id</option>
+                    <option value="type">type</option>
+                    <option value="placeholder">placeholder</option>
+                </select>
+            </form>
+        </section>
+
+        <!-- Pergunta 8: Imagem -->
+        <section>
+            <h2>Qual linguagem de programação é representada pelo logotipo abaixo?</h2>
+            <figure>
+                <!-- Tag <figure> agrupa imagens e legendas. -->
+                <img src="assets/img/perg8.png" alt="Logotipo de uma linguagem de programação">
+                <!-- Tag <img> exibe uma imagem. O atributo 'src' define o caminho do arquivo de imagem, e 'alt' fornece um texto alternativo para leitores de tela ou no caso de erro de carregamento. -->
+                <figcaption>Figure 1: Logotipo de uma linguagem de programação</figcaption>
+                <!-- Tag <figcaption> fornece uma legenda para a imagem. -->
+            </figure>
+            <input type="text" name="Pergunta8" id="p8" placeholder="Digite sua resposta...">
+        </section>
+
+        <!-- Tabela de Pontuação -->
+        <section>
+            <h2>Tabela de Pontuação</h2>
+            <table border="1">
+                <!-- Tag <table> cria uma tabela. O atributo 'border' adiciona uma borda ao redor das células. -->
+                <thead>
+                    <!-- Tag <thead> define o cabeçalho da tabela. -->
+                    <tr>
+                        <th>Pontuação</th>
+                        <!-- Tag <th> define uma célula de cabeçalho de uma tabela (negrito e centralizado por padrão). -->
+                        <th>Avaliação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Tag <tbody> contém o corpo da tabela. -->
+                    <tr>
+                        <!-- Tag <tr> define uma linha da tabela. -->
+                        <td>0-2</td>
+                        <!-- Tag <td> define uma célula de dados de uma tabela. -->
+                        <td>Não desista! Cada tentativa é uma oportunidade de você aprender.</td>
+                    </tr>
+                    <tr>
+                        <td>3-4</td>
+                        <td>Você ainda precisa melhorar. Que tal estudar mais sobre programação?</td>
+                    </tr>
+                    <tr>
+                        <td>5-7</td>
+                        <td>Bom! Seu conhecimento em programação está satisfatório.</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Perfeito! Você está muito bem informado sobre programação.</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <!-- Tag <tfoot> define o rodapé da tabela. -->
+                    <tr>
+                        <td colspan="2">Boa sorte na próxima! Estude mais para melhorar.</td>
+                        <!-- Atributo 'colspan' faz a célula ocupar duas colunas. -->
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!-- Lista de respostas -->
+        <section>
+            <h2>Verifique suas respostas</h2>
+            <details>
+                <!-- Tag <details> cria um conteúdo que pode ser expandido ou recolhido. -->
+                <summary>Clique aqui para ver as respostas do quiz</summary>
+                <!-- Tag <summary> define o título visível de um elemento <details>. -->
+                <ol>
+                    <!-- Tag <ol> cria uma lista ordenada. -->
+                    <li>HTML</li>
+                    <li>Domínio</li>
+                    <li>Sadasij%$sdhf6559</li>
+                    <li>1991</li>
+                    <li>JavaScript, Java</li>
+                    <li>Arquivo deve ter extensão .html</li>
+                    <li>type</li>
+                    <li>Java</li>
+                </ol>
+            </details>
+        </section>
+
+        <!-- Formulário de feedback -->
+        <section>
+            <h2>Nos dê seu feedback</h2>
+            <form>
+                <fieldset>
+                    <!-- Tag <fieldset> agrupa elementos relacionados em um formulário. -->
+                    <legend>Informações de contato</legend>
+                    <!-- Tag <legend> define um título para o grupo <fieldset>. -->
+                    <label for="name">Nome:</label>
+                    <input type="text" name="name" id="name"><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email"><br>
+
+                    <label for="comentarios">Comentários</label><br>
+                    <textarea name="comentarios" id="comentarios" rows="4" cols="50" placeholder="Digite seus comentários aqui"></textarea><br>
+                    <!-- Tag <textarea> cria um campo para entrada de texto de várias linhas. -->
+                    <button>Envie o feedback</button>
+                    <!-- Tag <button> cria um botão. -->
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Tag <footer> contém o rodapé da página. -->
+        <p class=paragrafo>&copy; Quiz de programação. Todos os direitos reservados.</p>
+        <p class=paragrafo>Para conhecer outros quizzes <a href="quiz.html" target="_blank">clique aqui.</a></p>
+        <!-- Atributo 'target="_blank"' abre o link em uma nova aba. -->
+    </footer>
+</body>
+</html>
+
+<!--Explicação por seção:
+Cabeçalho (<head>): Define configurações e meta-informações da página, como charset, viewport e título.
+Cabeçalho da página (<header>): Introdução e título do quiz.
+Seções de perguntas: Cada seção do <main> apresenta uma pergunta com diferentes tipos de campos de entrada (radio buttons, texto, senha, data, checkboxes, upload de arquivos, menu suspenso).
+Tabela de pontuação: Uma tabela com avaliações baseadas na pontuação do quiz.
+Lista de respostas: Exibe as respostas corretas, usando <details> e <summary> para ocultar inicialmente o conteúdo.
+Formulário de feedback: Permite ao usuário fornecer feedback sobre o quiz.
+Rodapé (<footer>): Informações sobre direitos autorais e um link para outros quizzes.-->
